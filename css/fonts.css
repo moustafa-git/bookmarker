@@ -1,0 +1,19 @@
+@font-face {
+  font-family: Pacifico;
+  src: url(./../fonts/Pacifico-Regular.ttf);
+}
+
+@font-face {
+  font-family: PTSans;
+  src: url(./../fonts/PTSansCaption-Regular.ttf);
+}
+
+@font-face {
+  font-family: Righteous;
+  src: url(./../fonts/Righteous-Regular.ttf);
+}
+
+@font-face {
+  font-family: Bree;
+  src: url(./../fonts/BreeSerif-Regular.ttf);
+}

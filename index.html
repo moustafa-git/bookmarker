@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Bookmark websites" />
+    <meta name="keywords" content="bookmark websites save" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/fonts.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <script defer src="./js/bootstrap.bundle.min.js"></script>
+    <script defer src="./js/index.js"></script>
+    <title>Bookmark</title>
+  </head>
+  <body>
+    <div
+      class="layer d-flex flex-wrap justify-content-center align-items-center"
+    >
+      <div class="submit-card p-4">
+        <div class="card-header d-flex justify-content-between">
+          <div class="circles d-flex gap-2">
+            <div class="circle c1"></div>
+            <div class="circle c2"></div>
+            <div class="circle c3"></div>
+          </div>
+          <button class="close">
+            <i class="fa-solid fa-xmark fs-3"></i>
+          </button>
+        </div>
+        <div class="title">
+          <h3>
+            Site Name or Url is not valid, Please follow the rules below :
+          </h3>
+        </div>
+        <div class="card-content">
+          <i class="fa-regular fa-circle-right"></i>
+          <p>Site name must contain at least 3 characters</p>
+          <i class="fa-regular fa-circle-right"></i>
+          <p>Site URL must be a valid one</p>
+        </div>
+      </div>
+    </div>
+    <header class="pt-5">
+      <div class="container">
+        <div class="title d-flex justify-content-center">
+          <h1 class="">Bookmarker</h1>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- BOOKMARK INPUT -->
+      <section class="bookmark-input">
+        <div class="container">
+          <form
+            class="content d-flex flex-wrap flex-column justify-content-center align-items-center gap-4"
+          >
+            <h2 class="text-center">
+              <i class="fa-solid fa-bookmark fa-md"></i> Bookmark your favorite
+              sites <i class="fa-solid fa-bookmark fa-md"></i>
+            </h2>
+            <div class="input w-100 position-relative">
+              <label for="site-name">
+                <i class="fa-solid fa-book-bookmark me-2 mb-3"></i>Site
+                Name</label
+              >
+              <input
+                type="text"
+                id="site-name"
+                class="w-100 rounded-2 normal-input"
+                placeholder="Bookmark Name"
+              />
+              <span class="valid-icon"
+                ><i class="fa-solid fa-check fa-lg"></i
+              ></span>
+
+              <span class="invalid-icon fa-lg"
+                ><i class="fa-solid fa-circle-exclamation"></i
+              ></span>
+            </div>
+            <div class="input w-100 position-relative">
+              <label for="site-url">
+                <i class="fa-solid fa-link me-2 mb-3"></i>Site URL</label
+              >
+              <input
+                type="text"
+                id="site-url"
+                class="w-100 rounded-2 normal-input"
+                placeholder="Website URL"
+              />
+              <span class="valid-icon2"
+                ><i class="fa-solid fa-check fa-lg"></i
+              ></span>
+
+              <span class="invalid-icon2 fa-lg"
+                ><i class="fa-solid fa-circle-exclamation"></i
+              ></span>
+            </div>
+            <button class="submit-button">Submit</button>
+          </form>
+        </div>
+        <!-- <div class="submit-card p-4">
+          <div class="card-header d-flex justify-content-between">
+            <div class="circles d-flex gap-2">
+              <div class="circle c1"></div>
+              <div class="circle c2"></div>
+              <div class="circle c3"></div>
+            </div>
+            <button class="close">
+              <i class="fa-solid fa-xmark fs-3"></i>
+            </button>
+          </div>
+          <div class="title">
+            <h3>
+              Site Name or Url is not valid, Please follow the rules below :
+            </h3>
+          </div>
+          <div class="card-content">
+            <i class="fa-regular fa-circle-right"></i>
+            <p>Site name must contain at least 3 characters</p>
+            <i class="fa-regular fa-circle-right"></i>
+            <p>Site URL must be a valid one</p>
+          </div>
+        </div> -->
+      </section>
+      <!-- END OF BOOKMARK INPUT -->
+
+      <!-- BOOKMARK DISPLAY -->
+      <section class="bookmark-display py-4">
+        <div class="container">
+          <table class="table bg-light text-center">
+            <thead>
+              <tr>
+                <th scope="col">Index</th>
+                <th scope="col">Website Name</th>
+                <th scope="col">Visit</th>
+                <th scope="col">Delete</th>
+              </tr>
+            </thead>
+            <tbody id="table-body"></tbody>
+          </table>
+        </div>
+      </section>
+      <!-- END OF BOOKMARK DISPLAY -->
+    </main>
+  </body>
+</html>
