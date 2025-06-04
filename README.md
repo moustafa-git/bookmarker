@@ -13,7 +13,7 @@
 
 ## Live Demo
 
-Try Bookmarker now: https://melodious-sunflower-827495.netlify.app/
+Try Bookmarker now: [Bookmarker-netlify](https://683f8e985737f430a864184b--melodious-sunflower-827495.netlify.app/)
 
 ![Logo](./images/1.png)
 
