@@ -25,4 +25,4 @@ Try Bookmarker now: https://melodious-sunflower-827495.netlify.app/
 - 💾 Local storage support (bookmarks are saved across sessions)  
 - 🧭 Open bookmarked sites in a new tab  
 - ❌ Modal popup for invalid submissions  
-- 📱 Responsive design *(optional with Bootstrap)*
+- 📱 Responsive design
