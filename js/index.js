@@ -50,8 +50,9 @@ function deleteBk(index) {
 
 function addBookmarks() {
   let rows = "";
-  rows += bookmarks.map(
-    (site, index) => `<tr>
+  rows = bookmarks
+    .map(
+      (site, index) => `<tr>
                 <th scope="row">${index + 1}</th>
                 <td>${site.name}</td>
                 <td>
@@ -69,7 +70,8 @@ function addBookmarks() {
                   </button>
                 </td>
               </tr>`
-  );
+    )
+    .join("");
   tableBody.innerHTML = rows;
   localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
 }
